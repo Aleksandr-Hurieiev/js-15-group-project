@@ -13,9 +13,9 @@
     />
     
     <script type="module" crossorigin src="/js-15-group-project/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/js-15-group-project/assets/vendor-8f98089f.js">
-    <link rel="stylesheet" href="/js-15-group-project/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/js-15-group-project/assets/index-d5c42f4d.css">
+    <link rel="modulepreload" crossorigin href="/js-15-group-project/assets/vendor-d17c2e39.js">
+    <link rel="stylesheet" href="/js-15-group-project/assets/vendor-60200598.css">
+    <link rel="stylesheet" href="/js-15-group-project/assets/index-299459fb.css">
   </head>
   <body>
     <header class="section">
@@ -80,7 +80,6 @@
           </p>
         </div>
       </div>
-
       <div class="ac">
         <h2 class="ac-header">
           <button type="button" class="ac-trigger">ROLE</button>
@@ -93,7 +92,6 @@
           </ul>
         </div>
       </div>
-
       <div class="ac">
         <h2 class="ac-header">
           <button type="button" class="ac-trigger">EDUCATION</button>
@@ -320,9 +318,68 @@
   <div class="wraper"></div>
 </section>
 
-    <section class="section">
-  <div class="wraper"></div>
+    <section id="reviews" class="section">
+  <h1 class="section-title">REVIEWS</h1>
+  <div class="container">
+    <div class="swiper-container">
+      <ul id="reviews-list" class="swiper-wrapper reviews-list">
+        <!-- Динамічно додані відгуки будуть вставлені сюди -->
+      </ul>
+      <div class="swiper-navigation">
+        <button type="button" class="custom-swiper-button-prev">
+          <svg
+            class="left"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.6667 16H5.33342"
+              stroke="#3B3B3B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.3333 24L5.33325 16L13.3333 8"
+              stroke="#3B3B3B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button type="button" class="custom-swiper-button-next">
+          <svg
+            class="right"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.33325 16H26.6666"
+              stroke="#FAFAFA"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.6667 8L26.6667 16L18.6667 24"
+              stroke="#FAFAFA"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="error-message" class="error-message" style="display: none">
+      Not found
+    </div>
+  </div>
 </section>
+
 
     <footer class="section">
   <div class="wraper"></div>
