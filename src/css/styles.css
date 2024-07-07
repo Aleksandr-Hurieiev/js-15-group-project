@@ -15,11 +15,4 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 
-:root {
-  --background: #1c1d20;
-  --cards: #242527;
-  --arrow: #3b3b3b;
-  --button-text: #ed3b44;
-  --main-text: #fafafa;
-  --font-family: 'Inter Tight', sans-serif;
-}
+
