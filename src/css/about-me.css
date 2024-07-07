@@ -32,90 +32,79 @@
 }
 /* ===================== accordion ============================================= */
 .accordion-container {
+  padding: 32px 0;
 }
-.ac {
+.accordion-container .ac {
   margin-top: 8px;
-  background-color: rgba(28, 28, 28, 0);
-}
-.ac-header {
-}
-.ac-trigger {
-}
-.ac-panel {
-}
-.ac-text {
-}
-
-.ac {
-  margin-top: 8px;
-  box-sizing: border-box;
   padding-bottom: 32px;
+  background-color: rgba(28, 28, 28, 0);
+  border: 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
-.ac::after {
-  border-bottom: 1px solid #000;
-}
-.ac .ac-header {
-  margin: 0;
-  padding: 0;
-}
-.ac .ac-trigger {
+.accordion-container .ac .ac-trigger {
+  padding: 0px 0px 12px 0px;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
-  text-align: left;
-  width: 100%;
-  padding: 8px 32px 8px 8px;
-  display: block;
-  cursor: pointer;
-  background-color: transparent;
-  transition: color 0.25s ease;
-  position: relative;
-  text-decoration: none;
-  border: 0;
 }
-.ac .ac-trigger::after {
-  content: url(../img/about-me/arrow.svg);
+.accordion-container .ac .ac-trigger .ac-span {
+  background: url(../img/about-me/arrow18.svg) no-repeat center;
   text-align: center;
-  width: 15px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  transform: rotate(180deg) translateY(50%);
+
   position: absolute;
   right: 10px;
   top: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 100px;
-  padding: 9px;
+  border-radius: 50%;
   width: 36px;
   height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.ac .ac-trigger:focus {
+.accordion-container .ac .ac-trigger:focus {
   color: #8a8a8a;
 }
-.ac .ac-panel {
+.accordion-container .ac .ac-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.ac .ac-panel .ac-text {
+.accordion-container .ac .ac-panel .ac-text {
   font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
+  padding: 12px 0 0 0;
 }
-.ac.js-enabled .ac-panel {
+.about_me-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about_me-role,
+.about_me-education {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordion-container .ac.js-enabled .ac-panel {
   visibility: hidden;
 }
-.ac.is-active .ac-panel {
+.accordion-container .ac.is-active .ac-panel {
   visibility: visible;
 }
-.ac.is-active > .ac-header .ac-trigger::after {
-  content: url(../img/about-me/arrow.svg);
-  transform: rotate(180deg);
+.accordion-container .ac.is-active > .ac-header .ac-trigger .ac-span {
+  -webkit-transform: translate(0, -50%);
+  transform: translateY(-50%);
+  align-items: center;
 }
 
 /* ================================================================== */
