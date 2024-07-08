@@ -2,7 +2,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-export const accordionAboutMe = new Accordion('.accordion-container', {
+export const accordionAboutMe = new Accordion('.accordion-container_about', {
   duration: 500,
   openOnInit: [0],
   elementClass: 'acc',
