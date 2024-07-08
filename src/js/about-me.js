@@ -1,3 +1,4 @@
+//================= accordion ===================================================
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -7,4 +8,29 @@ export const accordionAboutMe = new Accordion('.accordion-container', {
   elementClass: 'acc',
   triggerClass: 'acc-trigger',
   panelClass: 'acc-panel',
+});
+
+//================= swiper ===================================================
+
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
+
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
+
+export const swiperAboutMe = new Swiper('.swiper_about', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 3,
+  // If we need pagination
+  direction: 'horizontal',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper_about-next',
+    prevEl: '.swiper_about-pref',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
 });
