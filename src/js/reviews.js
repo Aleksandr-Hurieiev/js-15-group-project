@@ -89,6 +89,9 @@ function initSwiper() {
       onlyInViewport: true,
     },
     breakpoints: {
+      375: {
+        slidesPerView: 1,
+      },
       768: {
         slidesPerView: 2,
       },
