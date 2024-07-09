@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/js-15-group-project/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/js-15-group-project/assets/vendor-d17c2e39.js">
     <link rel="stylesheet" href="/js-15-group-project/assets/vendor-60200598.css">
-    <link rel="stylesheet" href="/js-15-group-project/assets/index-3493c3d1.css">
+    <link rel="stylesheet" href="/js-15-group-project/assets/index-0442821b.css">
   </head>
   <body>
     
@@ -26,73 +26,69 @@
       <header class="section header-section menu-section">
   <div class="header-container">
 
-    <!-- <div>
-      <div class="backdrop-mobile hidden ">
-    <div class="modal-mobile">
-        <button type="button" class="modal-close-btn">
-            <svg class="modal-close-icon">
-                <use class="" href="./img/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <nav class="page-nav-mobile">
-            <ul class="navlist-mobile">
-                <li class="navlist-item-mobile">
-                    <a class="navlist-link-mobile" href="#about_me">About me</a>
-                </li>
-                <li class="navlist-item-mobile">
-                    <a class="navlist-link-mobile" href="#benefits">Benefits</a>
-                </li>
-                <li class="navlist-item-mobile">
-                    <a class="navlist-link-mobile" href="#projects">Projects</a>
-                </li>
-                <li class="navlist-item-mobile">
-                    <a class="navlist-link-mobile" href="#faq">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <button class="modal-btn" type="button" href="work-together">Order the project</button>
-
-
-    </div>
-</div>
-    </div> -->
-
-      <a class="header-logo" href="./index.html">
-        <img src="/js-15-group-project/assets/logo-0e2fbac5.png" alt="author's photo" />
-        <div class="header-logo-text">
-            <svg class="header-logo-icon">
-              <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-name"></use>
-            </svg>
-        </div>
-      </a>
-       <nav>
-          <a class="header-nav-menu">Menu</a>
-            <div class="header-menu hidden" >
-              <ul class="header-menu-list">
-                <li class="header-menu-item">
-                  <a id="header-about-me" class="header-menu-item-link" href="#about_me">About me</a>
-                </li>
-                <li class="header-menu-item">
-                  <a id="header-benefits" class="header-menu-item-link" href="#benefits">Benefits</a>
-                </li>
-                <li class="header-menu-item">
-                  <a id="header-projects" class="header-menu-item-link" href="#projects">Projects</a>
-                </li>
-                <li class="header-menu-item">
-                  <a id="header-faq" class="header-menu-item-link" href="#faq-section">FAQ</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        
-        <a class="header-btn" type="button" href="#work-together">Order the project</a>
+    <div class="mobile-menu hidden">
+      <div class="backdrop-mobile">
+    <button type="button" class="modal-close-btn">
+        <svg class="modal-close-icon">
+            <use class="" href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-close"></use>
+        </svg>
+    </button>
+    <nav class="page-nav-mobile">
+        <ul class="navlist-mobile">
+            <li class="navlist-item-mobile">
+                <a id="header-about-me_" class="header-menu-item-link" href="#about_me">About me</a>
+            </li>
+            <li class="navlist-item-mobile">
+                <a id="header-benefits_" class="header-menu-item-link" href="#benefits">Benefits</a>
+            </li>
+            <li class="navlist-item-mobile">
+                <a id="header-projects_" class="header-menu-item-link" href="#projects">Projects</a>
+            </li>
+            <li class="navlist-item-mobile">
+                <a id="header-faq_" class="header-menu-item-link" href="#faq-section">FAQ</a>
+            </li>
+        </ul>
+    </nav>
     
-        <button type="button" class="open-menu-btn">
-          <svg width="28" height="28">
-            <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-burger"></use>
+    <a id="orderProject_" class="modal-btn" type="button" href="#work-together">Order the project</a>
+</div>
+    </div>
+
+    <a class="header-logo" href="./index.html">
+      <img src="/js-15-group-project/assets/logo-0e2fbac5.png" alt="author's photo" />
+      <div class="header-logo-text">
+          <svg class="header-logo-icon">
+            <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-name"></use>
           </svg>
-        </button>
+      </div>
+    </a>
+    <nav>
+      <a class="header-nav-menu">Menu</a>
+        <div class="header-menu hidden" >
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a id="header-about-me" class="header-menu-item-link" href="#about_me">About me</a>
+            </li>
+            <li class="header-menu-item">
+              <a id="header-benefits" class="header-menu-item-link" href="#benefits">Benefits</a>
+            </li>
+            <li class="header-menu-item">
+              <a id="header-projects" class="header-menu-item-link" href="#projects">Projects</a>
+            </li>
+            <li class="header-menu-item">
+              <a id="header-faq" class="header-menu-item-link" href="#faq-section">FAQ</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+      
+    <a id="orderProject" class="header-btn" type="button" href="#work-together">Order the project</a>
+
+    <button type="button" class="open-menu-btn">
+      <svg width="28" height="28">
+        <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
     </div>
@@ -266,7 +262,7 @@
       <ul class="benefits-list">
         <li class="benefits-card">
             <svg class="benefits-item-icon" aria-label="icon-user">
-            <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-user" class="benefits-icon"></use>
+            <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-user" class="benefits-icon"></use>
           </svg>
           <h2 class="ben-card-title">Expertise</h2>
           <p class="ben-card-descr">
@@ -277,7 +273,7 @@
 
         <li class="benefits-card">
           <svg class="benefits-item-icon" aria-label="icon-message-chat-circle">
-            <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-message-chat-circle" class="benefits-icon"></use>
+            <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-message-chat-circle" class="benefits-icon"></use>
           </svg>
           <h2 class="ben-card-title">Communication</h2>
           <p class="ben-card-descr">
@@ -288,7 +284,7 @@
 
         <li class="benefits-card">
           <svg class="benefits-item-icon" aria-label="icon-brush">
-            <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-brush" class="benefits-icon"></use>
+            <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-brush" class="benefits-icon"></use>
           </svg>
           <h2 class="ben-card-title">Art</h2>
           <p class="ben-card-descr">
@@ -299,7 +295,7 @@
 
         <li class="benefits-card ben-last-card">
           <svg class="benefits-item-icon" aria-label="icon-hourglass">
-            <use href="/js-15-group-project/assets/sprite-27859b01.svg#icon-hourglass" class="benefits-icon"></use>
+            <use href="/js-15-group-project/assets/sprite-190dd1f5.svg#icon-hourglass" class="benefits-icon"></use>
           </svg>
           <h2 class="ben-card-title">Urgent execution</h2>
           <p class="ben-card-descr">
